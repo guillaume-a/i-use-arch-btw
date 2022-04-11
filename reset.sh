@@ -6,10 +6,10 @@
 sudo pacman -D --asdeps $(pacman -Qqe)
 
 #Mask basic stuff as explicit
-sudo pacman -D --asexplicit base linux linux-firmware
+sudo pacman -D --asexplicit base base-devel linux linux-firmware
 
 #Remove all orpheans (all non explicit packages)
-sudo pacman -Qtdq | pacman -Rns -
+sudo pacman -Qtdq | sudo pacman -Rns --noconfirm -
 
 #Done.
 
@@ -22,7 +22,7 @@ sudo echo "archcodr" > /etc/hostname
 
 #Install wanted packages
 
-sudo pacman -Sy --no-confirm base-devel git vim openssh man xf86-video-{vesa,intel} nvidia xorg-server xorg-init xorg-fonts-{75,100}dpi xorg-backlight arandr networkmanager docker acpi acpid alsautils neofetch feh fish alacritty
+sudo pacman -Sy --noconfirm git vim openssh man xf86-video-{vesa,intel} nvidia xorg-server xorg-init xorg-fonts-{75,100}dpi xorg-backlight arandr networkmanager docker acpi acpid alsautils neofetch feh zsh alacritty
 
 #Activate services
 sudo systemctl enable NetworkManager
