@@ -15,6 +15,7 @@ reflector --country France --age 12 --protocol https --sort rate --save /etc/pac
 pacstrap /mnt base base-devel linux linux-firmware networkmanager
 
 genfstab -U /mnt >> /mnt/etc/fstab
+#eventually add /home mount
 
 arch-chroot /mnt
 
