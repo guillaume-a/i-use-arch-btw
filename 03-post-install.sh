@@ -50,6 +50,9 @@ chsh -s /usr/bin/zsh
 Installer ohmyzsh
 
 
+sudo pacman -Sy alsa-utils pipewire pipewire-alsa wireplumber pipewire-pulse pipewire-jack
+sof-firmware
+
 -----
 
 Fichier a rajouter dans le repo
