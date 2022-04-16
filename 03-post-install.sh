@@ -65,3 +65,5 @@ Aur
 
 Brave-bin
 
+
+	dnssd://Brother%20MFC-9330CDW._ipp._tcp.local/?uuid=e3248000-80ce-11db-8000-3c2af4052bae
